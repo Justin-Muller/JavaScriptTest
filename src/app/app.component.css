@@ -3,25 +3,38 @@
   color: #76767C;
   border: none;
   font-weight: bold;
+  padding: 0;
 }
 
 .footer {
   background-color: #F8F8F8;
   bottom: 0;
   border-top: 1px solid #DDDDDD;
-  position: absolute;
+  position: fixed;
   width: 100%;
   line-height: 40px;
+}
+
+.footer-content {
+  padding: 0 10px;
 }
 
 .footer input {
   border: 1px solid #D7D7D7;
   border-radius: 5px;
+  height: 20px;
+  width: 80%;
+}
+
+.footer .button-clear {
+  width: 15%;
 }
 
 
 .header {
-  position: relative;
+  top: 0;
+  width: 100%;
+  position: fixed;
   background-color: #F5F5F5;
   line-height: 40px;
   text-align: center;
