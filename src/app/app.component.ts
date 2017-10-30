@@ -7,8 +7,6 @@ import { sonnets } from './sonnets';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Shakespeare's Sonnets";
-
   formattedSonnets = sonnets.map((sonnet) => {
     return {
       ...sonnet,
@@ -16,7 +14,18 @@ export class AppComponent {
     }
   });
 
+  messages = [];
+
+  model = {
+    message: null
+  };
+
   onSubmit = (data) => {
-    console.log('submitted data?', data);
+    this.messages.push({
+      text: this.model.message
+    });
+
+    //after completed with message, reset field.
+    this.model.message = null;
   };
 }

@@ -7,15 +7,17 @@
 </div>
 
 <div class="content">
-  <!--<div class="message" *ngFor="let sonnet of formattedSonnets">{{sonnet.linesFormatted}}</div>-->
+  <div class="message" *ngFor="let message of messages">
+    <div class="message-content">{{message.text}}</div>
+  </div>
 
 </div>
 
 <div class="footer">
   <div class="footer-content">
-    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-      <label><input type="text" placeholder="iMessage" /></label>
-      <button class="button button-clear" type="submit">Send</button>
+    <form (ngSubmit)="onSubmit()" #messageForm="ngForm">
+      <label><input [(ngModel)]="model.message" name="message" type="text" placeholder="iMessage" required /></label>
+      <button class="button button-clear" type="submit" [disabled]="!messageForm.form.valid">Send</button>
     </form>
   </div>
 </div>
