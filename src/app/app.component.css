@@ -8,7 +8,7 @@
 }
 
 .content {
-  padding: 40px 15px;
+  padding: 40px 15px 60px;
 }
 
 .footer {
@@ -95,13 +95,17 @@
   white-space: pre-wrap;
 }
 
+.message > .clearfix {
+  clear: both;
+}
+
 .message-blue > .message-content {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 0;
   color: #fff;
   background-color: #2C9AFD;
   margin-left: 20%;
-  right: 0;
+  float: right;
 }
 
 .reply-status {
@@ -118,6 +122,7 @@
 
 .reply-status {
   position: relative;
+
 }
 
 .reply-status > .dot {

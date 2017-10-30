@@ -7,11 +7,12 @@
 </div>
 
 <div class="content">
-  <div class="message" *ngFor="let message of model.messages">
+  <div class="message" [ngClass]="{'message-blue': message.self}" *ngFor="let message of model.messages">
     <div class="message-content">{{message.text}}</div>
+    <div class="clearfix"></div>
   </div>
 
-  <div class="reply-status">
+  <div class="reply-status" *ngIf="model.replying">
     <div class="dot"></div>
     <div class="dot"></div>
     <div class="dot"></div>
