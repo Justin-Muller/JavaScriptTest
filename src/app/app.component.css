@@ -2,6 +2,7 @@
   background-color: transparent;
   color: #76767C;
   border: none;
+  font-size: 14px;
   font-weight: bold;
   padding: 0;
 }
@@ -21,17 +22,20 @@
 
 .footer-content {
   padding: 0 10px;
+  margin-top: -5px;
 }
 
 .footer input {
   border: 1px solid #D7D7D7;
   border-radius: 5px;
+  font-size: 14px;
   height: 20px;
+  padding: 0 5px;
   width: 80%;
 }
 
 .footer .button-clear {
-  width: 15%;
+  width: 14%;
 }
 
 
