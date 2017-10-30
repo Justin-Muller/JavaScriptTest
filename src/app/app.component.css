@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.content {
+  padding: 40px 15px;
+}
+
 .footer {
   background-color: #F8F8F8;
   bottom: 0;
@@ -72,4 +76,24 @@
   border-style: solid;
   border-left: 0;
   border-right-color: #1780FC;
+}
+
+.message {
+  display: inline-block;
+  max-width: 80%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  background-color: #E6E5EB;
+  line-height: 20px;
+  margin: 10px 0 0;
+  padding: 5px 10px;
+}
+
+.message-blue {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  color: #fff;
+  background-color: #2C9AFD;
+  margin-left: 20%;
+  right: 0;
 }

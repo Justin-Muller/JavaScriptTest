@@ -6,33 +6,11 @@
   <div class="header-button header-button-right">Contacts</div>
 </div>
 
+<div class="content">
+  <div class="message">test</div>
 
-
-
-
-
-
-
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+  <div class="message message-blue" *ngFor="let sonnet of sonnets">{{sonnet.lines}}</div>
 </div>
-<h2>List of sonnets: </h2>
-<table>
-  <thead>
-  <td>Number</td>
-  <td>Lines</td>
-  </thead>
-  <tbody>
-  <tr *ngFor="let sonnet of sonnets">
-    <td>{{sonnet.number}}</td>
-    <td>{{sonnet.lines}}</td>
-  </tr>
-  </tbody>
-</table>
-
-
 
 <div class="footer">
   <div class="footer-content">
