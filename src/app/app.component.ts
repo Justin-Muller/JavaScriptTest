@@ -35,7 +35,7 @@ export class AppComponent {
     }, 1500);
   };
 
-  onSubmit = (data) => {
+  onSubmit = () => {
     this.model.messages.push({
       self: true,
       text: this.model.message
