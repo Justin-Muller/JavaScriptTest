@@ -15,4 +15,8 @@ export class AppComponent {
       linesFormatted: sonnet.lines.join('\n')
     }
   });
+
+  onSubmit = (data) => {
+    console.log('submitted data?', data);
+  };
 }
