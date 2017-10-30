@@ -7,10 +7,15 @@
 </div>
 
 <div class="content">
-  <div class="message" *ngFor="let message of messages">
+  <div class="message" *ngFor="let message of model.messages">
     <div class="message-content">{{message.text}}</div>
   </div>
 
+  <div class="reply-status">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
 </div>
 
 <div class="footer">
