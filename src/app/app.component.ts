@@ -8,5 +8,11 @@ import { sonnets } from './sonnets';
 })
 export class AppComponent {
   title = "Shakespeare's Sonnets";
-  sonnets = sonnets;
+
+  formattedSonnets = sonnets.map((sonnet) => {
+    return {
+      ...sonnet,
+      linesFormatted: sonnet.lines.join('\n')
+    }
+  });
 }
