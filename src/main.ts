@@ -8,4 +8,10 @@ if (environment.production) {
   enableProdMode();
 }
 
+document.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
+
 platformBrowserDynamic().bootstrapModule(AppModule);

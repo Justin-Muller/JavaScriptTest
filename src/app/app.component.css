@@ -17,7 +17,7 @@
   border-top: 1px solid #DDDDDD;
   position: fixed;
   width: 100%;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 .footer-content {
@@ -32,12 +32,13 @@
   height: 20px;
   padding: 0 5px;
   width: 80%;
+  -webkit-appearance: none;
 }
 
-.footer .button-clear {
+.footer-button-right {
+  text-align: right;
   width: 14%;
 }
-
 
 .header {
   top: 0;

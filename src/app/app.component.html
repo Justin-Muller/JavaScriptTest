@@ -17,7 +17,7 @@
   <div class="footer-content">
     <form (ngSubmit)="onSubmit()" #messageForm="ngForm">
       <label><input [(ngModel)]="model.message" name="message" type="text" placeholder="iMessage" required /></label>
-      <button class="button button-clear" type="submit" [disabled]="!messageForm.form.valid">Send</button>
+      <button class="button button-clear footer-button-right" type="submit" [disabled]="!messageForm.form.valid">Send</button>
     </form>
   </div>
 </div>
