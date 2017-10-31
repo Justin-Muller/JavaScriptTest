@@ -2,7 +2,7 @@
 A simple test for JavaScript + Angular 4+ candidates at Infomedia.
 
 This basic starter is published here (/docs):
-http://infomedialtd.github.io/JavaScriptTest/
+https://justin-muller.github.io/JavaScriptTest/
 
 Test:
 Fork this repo, take the starter and impress us!
